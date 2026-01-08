@@ -306,7 +306,7 @@ rule-providers:
   Facebook:       {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Facebook.mrs}
   Proxy:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs}
   China:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs}
-  Custom18:       {<<: *BehaviorDNY, url: https://raw.githubusercontent.com/ikangi/rules/main/Custom18.yaml}
+  Custom18:       {<<: *BehaviorDNY, url: https://raw.githubusercontent.com/ikangi/rules/refs/heads/main/Custom18.yaml}
 
   # IP规则
   AdvertisingIP:  {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Advertising.mrs}
