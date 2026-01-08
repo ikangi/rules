@@ -189,6 +189,7 @@ proxy-groups:
   - {name: 欧盟策略,     type: select, proxies: [欧盟自动, 欧盟均衡-散列, 欧盟均衡-轮询], include-all: true, filter: *FilterEU, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/European_Union.png}
 
   # ==================== 其他策略组 ====================
+  - {name: 自选成人,     type: select, include-all: true, filter: *FilterAL, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Clubhouse.png}
   - {name: 冷门自选,     type: select, include-all: true, filter: *FilterOT, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Europe_Map.png}
   - {name: 全球手动,     type: select, include-all: true, filter: *FilterAL, icon: https://git.imee.me/https://github.com/Koolson/Qure/raw/master/IconSet/Color/Clubhouse.png}
 
@@ -233,6 +234,7 @@ rules:
   - RULE-SET,XPTV,直接连接
   - RULE-SET,Download,直接连接
   - RULE-SET,AppleCN,直接连接
+  - RULE-SET,Custom18,自选成人
   - RULE-SET,AI,人工智能
   - DOMAIN-KEYWORD,speedtest,网络测试
   - RULE-SET,Speedtest,网络测试
@@ -304,6 +306,7 @@ rule-providers:
   Facebook:       {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Facebook.mrs}
   Proxy:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs}
   China:          {<<: *BehaviorDN, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs}
+  Custom18:       {<<: *BehaviorDNY, url: https://raw.githubusercontent.com/ikangi/rules/refs/heads/main/Custom18.yaml}
 
   # IP规则
   AdvertisingIP:  {<<: *BehaviorIP, url: https://git.imee.me/https://github.com/666OS/rules/raw/release/mihomo/ip/Advertising.mrs}
