@@ -1,1 +1,39 @@
+payload:
+  # ------------------------------------------------------------------------------
+  # 自定义规则文件
+  # 注意：如果你使用了非域名类规则（如 IP-CIDR），请确保 rule-provider 的 behavior 为 'classical'
+  # ------------------------------------------------------------------------------
 
+  # [域名匹配]
+  # 匹配指定域名及其子域名
+  # - DOMAIN-SUFFIX,google.com
+  # 匹配完全一致的域名
+  # - DOMAIN,ad.example.com
+  # 匹配包含关键字的域名
+  # - DOMAIN-KEYWORD,google
+
+  # [IP 地址匹配] (需要在 rule-provider 中设置 behavior: classical)
+  # 匹配 IPv4 网段
+  # - IP-CIDR,127.0.0.0/8
+  # 匹配 IPv6 网段
+  # - IP-CIDR6,2620:0:2d0:200::7/32
+  # 匹配非中国大陆 IP (需配合 mmdb 使用，这种通常直接在 config 规则里写，这里很少用)
+  # - GEOIP,CN,no-resolve
+
+  # [进程/来源匹配] (较少用于远程规则集，通常用于本地 config)
+  # 匹配来自于指定进程的流量 (Windows/MacOS)
+  # - PROCESS-NAME,curl
+  # 匹配来源 IP
+  # - SRC-IP-CIDR,192.168.1.201/32
+
+  # [其他]
+  # 目标端口匹配
+  # - DST-PORT,80
+  # 协议类型匹配 (TCP/UDP)
+  # - NETWORK,TCP
+
+  # 示例规则：
+  - DOMAIN-SUFFIX,whatismyipaddress.com
+  - DOMAIN-SUFFIX,javdb.com
+  - DOMAIN-SUFFIX,camcaps.io
+  - DOMAIN-SUFFIX,pronhub.com
