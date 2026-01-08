@@ -222,8 +222,8 @@ proxy-groups:
 
 # ==================== 规则路由 ====================
 rules: 
-  # 拦截规则
   - RULE-SET,Custom18,自选成人
+  # 拦截规则
   - RULE-SET,Tracking,REJECT
   - RULE-SET,Advertising,REJECT
   - AND,((DST-PORT,443),(NETWORK,UDP)),REJECT  # 阻止 QUIC
