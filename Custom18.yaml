@@ -34,7 +34,6 @@ payload:
 
   # 示例规则：
   - DOMAIN-SUFFIX,whatismyipaddress.com
-  - DOMAIN-SUFFIX,ip.sb
   - DOMAIN-SUFFIX,javdb.com
-  - DOMAIN-SUFFIX,camcaps.io
   - DOMAIN-SUFFIX,pornhub.com
+  - DOMAIN-KEYWORD,camcaps
