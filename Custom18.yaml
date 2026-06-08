@@ -1,39 +1,38 @@
 payload:
-  # ------------------------------------------------------------------------------
-  # 自定义规则文件
-  # 注意：如果你使用了非域名类规则（如 IP-CIDR），请确保 rule-provider 的 behavior 为 'classical'
-  # ------------------------------------------------------------------------------
-
-  # [域名匹配]
-  # 匹配指定域名及其子域名
-  # - DOMAIN-SUFFIX,google.com
-  # 匹配完全一致的域名
-  # - DOMAIN,ad.example.com
-  # 匹配包含关键字的域名
-  # - DOMAIN-KEYWORD,google
-
-  # [IP 地址匹配] (需要在 rule-provider 中设置 behavior: classical)
-  # 匹配 IPv4 网段
-  # - IP-CIDR,127.0.0.0/8
-  # 匹配 IPv6 网段
-  # - IP-CIDR6,2620:0:2d0:200::7/32
-  # 匹配非中国大陆 IP (需配合 mmdb 使用，这种通常直接在 config 规则里写，这里很少用)
-  # - GEOIP,CN,no-resolve
-
-  # [进程/来源匹配] (较少用于远程规则集，通常用于本地 config)
-  # 匹配来自于指定进程的流量 (Windows/MacOS)
-  # - PROCESS-NAME,curl
-  # 匹配来源 IP
-  # - SRC-IP-CIDR,192.168.1.201/32
-
-  # [其他]
-  # 目标端口匹配
-  # - DST-PORT,80
-  # 协议类型匹配 (TCP/UDP)
-  # - NETWORK,TCP
-
-  # 示例规则：
-  - DOMAIN-SUFFIX,whatismyipaddress.com
-  - DOMAIN-SUFFIX,javdb.com
-  - DOMAIN-SUFFIX,pornhub.com
-  - DOMAIN-KEYWORD,camcaps
+  - 'DOMAIN-SUFFIX,whatismyipaddress.com'
+  - 'DOMAIN-SUFFIX,javdb.com'
+  - 'DOMAIN-SUFFIX,pornhub.com'
+  - 'DOMAIN-SUFFIX,bigcdn.cc'
+  - 'DOMAIN-SUFFIX,cdn.plyr.io'
+  - 'DOMAIN-SUFFIX,doppiocdn.com'
+  - 'DOMAIN-SUFFIX,eix304.com'
+  - 'DOMAIN-SUFFIX,externulls.com'
+  - 'DOMAIN-SUFFIX,fc2stream.tv'
+  - 'DOMAIN-SUFFIX,flirtify.com'
+  - 'DOMAIN-SUFFIX,fourhoi.com'
+  - 'DOMAIN-SUFFIX,huntrexus.com'
+  - 'DOMAIN-SUFFIX,jwpcdn.com'
+  - 'DOMAIN-SUFFIX,lulucdn.com'
+  - 'DOMAIN-SUFFIX,lulustream.com'
+  - 'DOMAIN-SUFFIX,luluvdo.com'
+  - 'DOMAIN-SUFFIX,myavlive.com'
+  - 'DOMAIN-SUFFIX,mydaddy.cc'
+  - 'DOMAIN-SUFFIX,nineyu.com'
+  - 'DOMAIN-SUFFIX,nowplay.to'
+  - 'DOMAIN-SUFFIX,nudeleted.com'
+  - 'DOMAIN-SUFFIX,onlyporn.tube'
+  - 'DOMAIN-SUFFIX,phncdn.com'
+  - 'DOMAIN-SUFFIX,sptvp.com'
+  - 'DOMAIN-SUFFIX,supremejav.com'
+  - 'DOMAIN-SUFFIX,surrit.com'
+  - 'DOMAIN-SUFFIX,tiktokcdn.com'
+  - 'DOMAIN-SUFFIX,tnmr.org'
+  - 'DOMAIN-SUFFIX,turbosplayer.com'
+  - 'DOMAIN-SUFFIX,turbovidhls.com'
+  - 'DOMAIN-SUFFIX,turboviplay.com'
+  - 'DOMAIN-SUFFIX,vidello.net'
+  - 'DOMAIN-SUFFIX,vtplayer.net'
+  - 'DOMAIN-SUFFIX,wheelroot.com'
+  - 'DOMAIN-SUFFIX,znvcdn.com'
+  - 'DOMAIN-KEYWORD,camcaps'
+  - 'DOMAIN-KEYWORD,missav'
